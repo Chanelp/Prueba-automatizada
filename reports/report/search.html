@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2022-12-02 18:43:44</p>
-                <p class='attribute'><strong>Duration: </strong>31.244s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 1</p>
+                <p class='attribute'><strong>Start Time: </strong>2022-12-02 18:51:37</p>
+                <p class='attribute'><strong>Duration: </strong>47.105s</p>
+                <p class='attribute'><strong>Status: </strong>Pass: 1, Error: 1</p>
             </div>
         </div>
         <div class="row">
@@ -40,12 +40,60 @@
                             </tr>
                             
                         
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_search_field_by_class_name (__main__.HolaMundo)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-warning">
+                                        
+                                            Error
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>InvalidArgumentException</p>
+                                        <p>Message: invalid argument: invalid locator
+  (Session info: chrome=108.0.5359.71)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x007DF243]
+	(No symbol) [0x00767FD1]
+	(No symbol) [0x0065D04D]
+	(No symbol) [0x0068C1BE]
+	(No symbol) [0x0068C22B]
+	(No symbol) [0x006BE612]
+	(No symbol) [0x006A85D4]
+	(No symbol) [0x006BC9EB]
+	(No symbol) [0x006A8386]
+	(No symbol) [0x0068163C]
+	(No symbol) [0x0068269D]
+	GetHandleVerifier [0x00A79A22+2655074]
+	GetHandleVerifier [0x00A6CA24+2601828]
+	GetHandleVerifier [0x00888C0A+619850]
+	GetHandleVerifier [0x00887830+614768]
+	(No symbol) [0x007705FC]
+	(No symbol) [0x00775968]
+	(No symbol) [0x00775A55]
+	(No symbol) [0x0078051B]
+	BaseThreadInitThunk [0x76B5FEF9+25]
+	RtlGetAppContainerNamedObjectPath [0x77427BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77427B8E+238]
+</p>
+                                    </td>
+                                </tr>
+                            
+                        
                         <tr>
                             <td>
-                               Total Test Runned: 1
+                               Total Test Runned: 2
                             </td>
                             <td>
-                                <span>Pass: 1</span>
+                                <span>Pass: 1, Error: 1</span>
                             </td>
                         </tr>
                     </tbody>
