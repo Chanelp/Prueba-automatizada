@@ -20,11 +20,17 @@ class RegisterNewUser(unittest.TestCase):
 
     def test_new_user(self):
         driver = self.driver
+
         driver.find_element('xpath', '//*[@id="header"]/div/div[2]/div/a').click()
+        driver.save_screenshot("captures/desplegable.png")
+
         driver.find_element('xpath', '//*[@id="header-account"]/div/ul/li[6]/a').click()
+        driver.save_screenshot("captures/myaccount.png")
+
         create_account_button = driver.find_element('xpath', '/html/body/div/div[2]/div[2]/div/div/div[2]/form/div/div[1]/div[2]/a')
         self.assertTrue(create_account_button.is_displayed() and create_account_button.is_enabled())
         create_account_button.click()
+        driver.save_screenshot("captures/login.png")
         
         self.assertEqual('Create New Customer Account', driver.title)
 
