@@ -41,7 +41,8 @@ class SearchTests(unittest.TestCase):
         self.assertEqual(1, len(products))
 
     def tearDown(self) -> None:
-        self.driver.quit()
+        self.driver.implicitly_wait(3)
+        self.driver.close()
 
 if __name__ == "__main__":
     unittest.main(verbosity= 2)
