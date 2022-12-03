@@ -1,2 +1,2 @@
-# Prueba-automatizada
-Prueba automatizada en Selenium con python para la tarea #4 de la materia programación 3.
+# Prueba-automatizada: Historias de usuario.
+### Acceso a las historias de usuario: https://trello.com/b/qfFjhUgc/historias-de-usario-para-el-sitio-madison-island
