@@ -1,3 +1,5 @@
+#UN EJEMPLO SENCILLO PARA INICIARME EN LA AUTOMATIZACIÓN CON SELENIM
+
 import unittest
 from pyunitreport import HTMLTestRunner
 from selenium import webdriver
@@ -41,4 +43,4 @@ class HolaMundo(unittest.TestCase):
         self.driver.quit()
 
 if __name__ == "__main__":
-    unittest.main(verbosity= 2)
+    unittest.main(verbosity=2, testRunner= HTMLTestRunner(output= 'ejemploReport', report_name= 'registro-usuario'))
